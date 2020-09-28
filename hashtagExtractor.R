@@ -16,7 +16,7 @@ data <- as.matrix(data[-1])
 
 maxrows <- nrow(data)
 for(i in 1:maxrows){
-    text[i] <- as.character(data[i,5])
+    text[i] <- as.character(data[i,6])
     htemp <- str_extract_all(text[i], "#\\S+", TRUE)
     
     if(ncol(htemp) != 0){
